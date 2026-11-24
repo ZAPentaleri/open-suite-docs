@@ -1,0 +1,66 @@
+# Catalog: sdf_object_types
+<!-- id: catalog:sdf_object_types -->
+
+| ID | Label | Value |
+|---|---|---|
+| `addressform` |  | custaddressform_ |
+| `advancedpdftemplate` |  | custtmpl_ |
+| `bankstatementparserplugin` |  | customscript |
+| `bundleinstallationscript` |  | customscript_ |
+| `center` |  | custcenter_ |
+| `centercategory` |  | custcentercategory_ |
+| `centerlink` |  | custlink_ |
+| `centertab` |  | custcentertab_ |
+| `clientscript` |  | customscript_ |
+| `cmscontenttype` |  | custcontenttype_ |
+| `crmcustomfield` |  | crmcustomfield_ |
+| `customglplugin` |  | customscript_ |
+| `customlist` |  | customlist_ |
+| `customrecordtype` |  | customrecord_ |
+| `customsegment` |  | customsegment_ |
+| `customtransactiontype` |  | customtransaction_ |
+| `dataset` |  | custdataset_ |
+| `datasetbuilderplugin` |  | customscript_ |
+| `emailcaptureplugin` |  | customscript_ |
+| `emailtemplate` |  | custemailtmpl_ |
+| `entitycustomfield` |  | custentity_ |
+| `entryForm` |  | custform_ |
+| `eventsubscriber` |  | custevsub_ |
+| `ficonnectivityplugin` |  | customscript |
+| `financiallayout` |  | customlayout_ |
+| `fiparserplugin` |  | customscript |
+| `integration` |  | custinteg |
+| `itemcustomfield` |  | custitem_ |
+| `itemnumbercustomfield` |  | custitemnumber_ |
+| `itemoptioncustomfield` |  | custcol_ |
+| `kpiscorecard` |  | custkpiscorecard_ |
+| `mapreducescript` |  | customscript_ |
+| `massupdatescript` |  | customscript_ |
+| `othercustomfield` |  | customrecord_ |
+| `pluginimplementation` |  | customscript_ |
+| `plugintype` |  | customscript_ |
+| `portlet` |  | customscript_ |
+| `publisheddashboard` |  | custpubdashboard_ |
+| `reportdefinition` |  | customreport_ |
+| `restlet` |  | customscript_ |
+| `role` |  | customrole_ |
+| `savedcsvimport` |  | custimport_ |
+| `savedsearch` |  | customsearch_ |
+| `scheduledscript` |  | customscript_ |
+| `sdfinstallationscript` |  | customscript_ |
+| `secret` |  | custsecret_ |
+| `singlepageapp` |  | custspa_ |
+| `sspapplication` |  | webapp_ |
+| `sublist` |  | custsublist_ |
+| `subtab` |  | custtab_ |
+| `suitelet` |  | customscript_ |
+| `toolset` |  | custtoolset_ |
+| `transactionForm` |  | custform_ |
+| `transactionbodycustomfield` |  | custbody_ |
+| `transactioncolumncustomfield` |  | custcol_ |
+| `translationcollection` |  | custcollection_ |
+| `usereventscript` |  | customscript_ |
+| `workbook` |  | custworkbook_ |
+| `workbookbuilderplugin` |  | customscript_ |
+| `workflow` |  | customworkflow_ |
+| `workflowactionscript` |  | customscript |

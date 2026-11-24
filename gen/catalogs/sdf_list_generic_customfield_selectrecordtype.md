@@ -1,0 +1,454 @@
+# Catalog: sdf_list_generic_customfield_selectrecordtype
+<!-- id: catalog:sdf_list_generic_customfield_selectrecordtype -->
+
+| ID | Label | Group |
+|---|---|---|
+| `-10` |  |  |
+| `-100` |  |  |
+| `-101` |  | CLASSES |
+| `-102` |  | DEPARTMENTS |
+| `-103` |  | LOCATIONS |
+| `-104` |  | SFA |
+| `-105` |  | ACCOUNTINGPERIODS |
+| `-106` |  |  |
+| `-108` |  | SFA |
+| `-109` |  |  |
+| `-110` |  | ACCOUNTING |
+| `-111` |  |  |
+| `-112` |  | ACCOUNTING |
+| `-113` |  | ISSUEDB |
+| `-114` |  | ISSUEDB |
+| `-115` |  | ISSUEDB |
+| `-116` |  | ISSUEDB |
+| `-117` |  | SUBSIDIARIES |
+| `-118` |  |  |
+| `-119` |  |  |
+| `-120` |  |  |
+| `-121` |  | PROMOCODES |
+| `-122` |  | MULTICURRENCY |
+| `-123` |  |  |
+| `-124` |  |  |
+| `-125` |  |  |
+| `-126` |  |  |
+| `-127` |  | ADVTAXENGINE |
+| `-128` |  | ACCOUNTING |
+| `-129` |  | WORKFLOW |
+| `-131` |  | MARKETING |
+| `-132` |  | SUPPORT |
+| `-133` |  | ISSUEDB |
+| `-134` |  | SFA |
+| `-135` |  | SFA |
+| `-136` |  | SFA |
+| `-137` |  |  |
+| `-138` |  | EXPENSEALLOCATION |
+| `-139` |  | BILLINGCLASSES |
+| `-140` |  | ADVBILLING |
+| `-1403` |  |  |
+| `-1404` |  |  |
+| `-141` |  | ADVBILLING |
+| `-142` |  | MARKETING |
+| `-143` |  | MARKETING |
+| `-144` |  | MARKETING |
+| `-145` |  | MARKETING |
+| `-146` |  | MARKETING |
+| `-147` |  |  |
+| `-148` |  | MARKETING |
+| `-149` |  | MARKETING |
+| `-150` |  | MARKETING |
+| `-1501` |  |  |
+| `-1502` |  | RULEBASEDRECOGNITIONTREATMENT |
+| `-1503` |  | RULEBASEDRECOGNITIONTREATMENT |
+| `-1504` |  |  |
+| `-151` |  | SUPPORT |
+| `-152` |  | SUPPORT |
+| `-153` |  | SUPPORT |
+| `-154` |  | SUPPORT |
+| `-155` |  |  |
+| `-1553` |  | FXRATETYPE |
+| `-156` |  |  |
+| `-157` |  | CRM |
+| `-158` |  | CRM |
+| `-159` |  |  |
+| `-160` |  |  |
+| `-161` |  |  |
+| `-162` |  | SFA |
+| `-163` |  | SUPPORT |
+| `-164` |  | ACCOUNTING |
+| `-165` |  |  |
+| `-166` |  |  |
+| `-167` |  |  |
+| `-168` |  |  |
+| `-169` |  |  |
+| `-170` |  |  |
+| `-171` |  |  |
+| `-172` |  | PAYROLL |
+| `-173` |  | ISSUEDB |
+| `-174` |  | ISSUEDB |
+| `-175` |  | ISSUEDB |
+| `-176` |  | ISSUEDB |
+| `-177` |  | JOBS |
+| `-178` |  |  |
+| `-179` |  |  |
+| `-180` |  |  |
+| `-181` |  |  |
+| `-182` |  | CRM |
+| `-183` |  |  |
+| `-184` |  | INVENTORY |
+| `-185` |  | WEBSITE |
+| `-186` |  | MULTPRICE |
+| `-187` |  | QUANTITYPRICING |
+| `-188` |  |  |
+| `-189` |  | REVENUERECOGNITION |
+| `-190` |  | ADVFORECASTING |
+| `-191` |  | TEAMSELLING |
+| `-192` |  | ACCOUNTING |
+| `-193` |  | ACCOUNTING |
+| `-194` |  | WEBSITE |
+| `-195` |  |  |
+| `-196` |  |  |
+| `-197` |  | MARKETING |
+| `-198` |  |  |
+| `-199` |  |  |
+| `-2` |  |  |
+| `-20` |  | CRM |
+| `-200` |  | GCO |
+| `-201` |  | UNITSOFMEASURE |
+| `-202` |  |  |
+| `-203` |  | SFA |
+| `-204` |  | SOFTDESCRIPTORS |
+| `-205` |  | QUANTITYPRICING |
+| `-206` |  | QUANTITYPRICING |
+| `-207` |  | GROSSPROFIT |
+| `-208` |  | REVRECVSOE |
+| `-209` |  | REVRECVSOE |
+| `-21` |  | CRM |
+| `-210` |  | ADVANCEDSITECUST |
+| `-211` |  | ADVANCEDJOBS |
+| `-212` |  | COMMISSIONS |
+| `-213` |  |  |
+| `-214` |  |  |
+| `-215` |  |  |
+| `-216` |  | REVENUERECOGNITION |
+| `-217` |  | REVENUERECOGNITION |
+| `-218` |  |  |
+| `-219` |  |  |
+| `-22` |  | CRM |
+| `-220` |  |  |
+| `-221` |  | UNITSOFMEASURE |
+| `-222` |  |  |
+| `-223` |  |  |
+| `-224` |  | MULTILANGUAGE |
+| `-225` |  | ADVTAXENGINE |
+| `-226` |  | MARKETING |
+| `-227` |  | MARKETING |
+| `-228` |  | ACCOUNTING |
+| `-229` |  | MARKETING |
+| `-23` |  | SUPPORT |
+| `-230` |  |  |
+| `-231` |  | REVENUERECOGNITION |
+| `-232` |  | AMORTIZATION |
+| `-233` |  | PROMOCODES |
+| `-234` |  | ADVBILLING |
+| `-235` |  | WORKFLOW |
+| `-236` |  | WORKFLOW |
+| `-237` |  | MULTICURRENCY |
+| `-238` |  |  |
+| `-239` |  | ADVTAXENGINE |
+| `-24` |  | MARKETING |
+| `-240` |  | SUBSIDIARIES |
+| `-241` |  | SUBSIDIARIES |
+| `-242` |  | BINMANAGEMENT |
+| `-243` |  |  |
+| `-244` |  | ACCOUNTING |
+| `-245` |  | ACCOUNTING |
+| `-246` |  | MRPORDEMANDPLAN |
+| `-247` |  | ITEMDEMANDPLANNING |
+| `-248` |  | STANDARDCOSTING |
+| `-249` |  | STANDARDCOSTING |
+| `-25` |  | KNOWLEDGEBASE |
+| `-250` |  | COACLASSIFICATIONMANAGEMENT |
+| `-251` |  | COACLASSIFICATIONMANAGEMENT |
+| `-252` |  | MULTIBOOKV2 |
+| `-253` |  | MULTIBOOK |
+| `-256` |  | TIMETRACKING |
+| `-257` |  | MULTIBOOKV2 |
+| `-258` |  | MULTIBOOKV2 |
+| `-259` |  | MULTIBOOKV2 |
+| `-26` |  | ISSUEDB |
+| `-261` |  | SUBSIDIARIES |
+| `-262` |  | MULTIPLECALENDARS |
+| `-263` |  | REVRECVSOE |
+| `-264` |  | ACCOUNTINGPERIODS |
+| `-265` |  |  |
+| `-266` |  | NUMBEREDINVENTORY |
+| `-268` |  | MULTISITE |
+| `-269` |  |  |
+| `-27` |  | ADVANCEDJOBS |
+| `-270` |  | COMMISSIONS |
+| `-271` |  | COMMISSIONS |
+| `-276` |  | CHARGEBASEDBILLING |
+| `-278` |  | RESOURCEALLOCATIONS |
+| `-28` |  | RESOURCEALLOCATIONS |
+| `-280` |  |  |
+| `-281` |  |  |
+| `-282` |  |  |
+| `-283` |  | CHARGEBASEDBILLING |
+| `-284` |  | CHARGEBASEDBILLING |
+| `-285` |  | CHARGEBASEDBILLING |
+| `-286` |  | CHARGEBASEDBILLING |
+| `-287` |  | JOBCOSTING |
+| `-288` |  | MFGROUTING |
+| `-289` |  | ADDRESSCUSTOMIZATION |
+| `-290` |  | CHARGEBASEDBILLING |
+| `-292` |  | TIMESHEETRECORDANY |
+| `-293` |  | CHARGEBASEDBILLING |
+| `-294` |  | MFGROUTING |
+| `-295` |  | TIMESHEETS |
+| `-296` |  | CHARGEBASEDBILLING |
+| `-297` |  | TIMESHEETS |
+| `-298` |  | STANDARDCOSTING |
+| `-3` |  | ACCOUNTING |
+| `-30` |  |  |
+| `-301` |  | RESOURCEALLOCATIONS |
+| `-302` |  | GLAUDITNUMBERING |
+| `-304` |  | PAYROLL |
+| `-309` |  | SHIPPINGPARTNERS |
+| `-31` |  |  |
+| `-310` |  | ADVANCEDJOBS |
+| `-311` |  | PAYROLL |
+| `-314` |  | ADVANCEDREVENUERECOGNITION |
+| `-315` |  | ADVREVRECORADVEXPMGMT |
+| `-316` |  | SHIPPINGPARTNERS |
+| `-317` |  | SHIPPINGPARTNERS |
+| `-319` |  |  |
+| `-320` |  | SUPPORT |
+| `-321` |  | ADVANCEDJOBS |
+| `-322` |  |  |
+| `-324` |  | PURCHASEORDERS |
+| `-325` |  | DISTRIBUTIONRESOURCEPLANNING |
+| `-326` |  | DISTRIBUTIONRESOURCEPLANNING |
+| `-327` |  | DISTRIBUTIONRESOURCEPLANNING |
+| `-330` |  | SUBSCRIPTIONBILLING |
+| `-331` |  | ARMREVENUEALLOCATION |
+| `-332` |  | ARMREVENUEALLOCATION |
+| `-333` |  | BILLINGACCOUNTS |
+| `-335` |  | ARMREVENUEALLOCATION |
+| `-336` |  | ADVANCEDREVENUERECOGNITION |
+| `-337` |  | SUBSCRIPTIONBILLING |
+| `-338` |  | SUBSCRIPTIONBILLING |
+| `-340` |  | ARMREVENUEALLOCATION |
+| `-341` |  | SUBSCRIPTIONBILLING |
+| `-342` |  | SUBSCRIPTIONBILLING |
+| `-343` |  | ADVREVRECORADVEXPMGMT |
+| `-344` |  | SUBSCRIPTIONBILLING |
+| `-345` |  | TERMINATIONREASONTRACKING |
+| `-346` |  | CUSTOMTRANSACTIONS |
+| `-347` |  | ADVANCEDREVENUERECOGNITION |
+| `-348` |  | ARMREVENUEALLOCATION |
+| `-349` |  | ADVANCEDREVENUERECOGNITION |
+| `-35` |  | MFGROUTING |
+| `-350` |  | POSITIONMANAGEMENT |
+| `-353` |  | AUTOLOCATIONASSIGNMENT |
+| `-355` |  | JOBMANAGEMENT |
+| `-356` |  | ADVANCEDGVMNTISSUEDIDTRACKING |
+| `-357` |  | ADVANCEDREVENUERECOGNITION |
+| `-359` |  | SUBSCRIPTIONBILLING |
+| `-36` |  | MFGROUTING |
+| `-360` |  | SUBSCRIPTIONBILLING |
+| `-361` |  | SUBSCRIPTIONBILLING |
+| `-362` |  | SUBSCRIPTIONBILLING |
+| `-364` |  | SUBSCRIPTIONBILLING |
+| `-365` |  | ADVANCEDREVENUERECOGNITION |
+| `-366` |  | KUDOS |
+| `-367` |  | KUDOS |
+| `-368` |  | ADVANCEDGVMNTISSUEDIDTRACKING |
+| `-369` |  | GROUPAVERAGECOSTING |
+| `-37` |  | PAYROLL |
+| `-371` |  | LOCATIONS |
+| `-372` |  | ADVANCEDGVMNTISSUEDIDTRACKING |
+| `-373` |  | ADVANCEDGVMNTISSUEDIDTRACKING |
+| `-374` |  | PERFORMANCEMANAGEMENT |
+| `-375` |  |  |
+| `-376` |  | TIMEOFFMANAGEMENT |
+| `-377` |  | TIMEOFFMANAGEMENT |
+| `-378` |  | COMMERCECATEGORIES |
+| `-379` |  | COMMERCECATEGORIES |
+| `-38` |  | PAYROLL |
+| `-380` |  | JOBMANAGEMENT |
+| `-381` |  | AUTOLOCATIONASSIGNMENT |
+| `-382` |  | TIMEOFFMANAGEMENT |
+| `-383` |  | TIMEOFFMANAGEMENT |
+| `-385` |  | AUTOLOCATIONASSIGNMENT |
+| `-386` |  | TIMEOFFMANAGEMENT |
+| `-387` |  | ADVANCEDPRINTING |
+| `-388` |  | JOBREQUISITION |
+| `-39` |  | PAYROLL |
+| `-391` |  | TIMEOFFMANAGEMENT |
+| `-392` |  | TIMEOFFMANAGEMENT |
+| `-395` |  | SUBSCRIPTIONBILLING |
+| `-396` |  | MULTIPLEBUDGETS |
+| `-4` |  |  |
+| `-40` |  | PAYROLL |
+| `-400` |  | ADVTAXENGINE |
+| `-4006` |  |  |
+| `-4007` |  |  |
+| `-4009` |  | WMSSYSTEM |
+| `-4010` |  | COMMERCESEARCHANALYTICS |
+| `-4011` |  | INVOICEGROUP |
+| `-4012` |  | ADVANCEDNUMBERINGSEQUENCES |
+| `-4016` |  | MATERIALREQUIREMENTSPLANNING |
+| `-402` |  | TIMEOFFMANAGEMENT |
+| `-4021` |  | VARIABLE_PAY_TBRBCT |
+| `-4023` |  | MATERIALREQUIREMENTSPLANNING |
+| `-4024` |  | MATERIALREQUIREMENTSPLANNING |
+| `-4025` |  | MATERIALREQUIREMENTSPLANNING |
+| `-4027` |  | CCTRACKING |
+| `-4028` |  | ADVANCEDNUMBERINGSEQUENCES |
+| `-403` |  | JOBREQUISITION |
+| `-4032` |  | CCTRACKING |
+| `-4033` |  | CCTRACKING |
+| `-4034` |  | MATERIALREQUIREMENTSPLANNING |
+| `-4035` |  | MATERIALREQUIREMENTSPLANNING |
+| `-4036` |  | MATERIALREQUIREMENTSPLANNING |
+| `-404` |  | JOBREQUISITION |
+| `-405` |  | TIMEOFFMANAGEMENT |
+| `-406` |  | TIMEOFFMANAGEMENT |
+| `-407` |  | TIMEOFFMANAGEMENT |
+| `-408` |  |  |
+| `-409` |  | LABORRULE_AND_CBBANDADVREVREC |
+| `-41` |  | EFFECTIVEDATING |
+| `-410` |  | CHARGEBASEDBILLINGANDADVREVREC |
+| `-4104` |  | LABORCOSTING |
+| `-4105` |  | LABORCOSTING |
+| `-4106` |  |  |
+| `-4108` |  | LABORCOSTING |
+| `-4109` |  | LABORCOSTING |
+| `-411` |  | CHARGEBASEDBILLINGANDADVREVREC |
+| `-4110` |  | MATERIALREQUIREMENTSPLANNING |
+| `-4114` |  | ADVANCEDNUMBERINGSEQUENCES |
+| `-4115` |  | LABORCOSTING |
+| `-4116` |  | OVERTIME |
+| `-4117` |  | SFA |
+| `-4118` |  | MATERIALREQUIREMENTSPLANNING |
+| `-412` |  | BILLINGRATECARDS |
+| `-413` |  | TIMEOFFMANAGEMENT |
+| `-414` |  | ACCOUNTING |
+| `-417` |  |  |
+| `-418` |  |  |
+| `-419` |  | CHARGEBASEDBILLINGANDADVREVREC |
+| `-420` |  | ACCOUNTING |
+| `-422` |  | ADVANCEDBILLOFMATERIALS |
+| `-423` |  | ADVANCEDBILLOFMATERIALS |
+| `-425` |  | WORKORDERS |
+| `-426` |  | ADVANCEDSITEMANAGEMENT |
+| `-427` |  | INBOUNDSHIPMENT |
+| `-428` |  | ADVANCEDSITEMANAGEMENT |
+| `-430` |  | ADVANCEDSITEMANAGEMENT |
+| `-431` |  | ADVANCEDSITEMANAGEMENT |
+| `-432` |  | ADVANCEDSITEMANAGEMENT |
+| `-434` |  |  |
+| `-435` |  |  |
+| `-436` |  |  |
+| `-437` |  | ADVANCEDSITEMANAGEMENT |
+| `-438` |  |  |
+| `-440` |  | FULFILLMENTREQUEST |
+| `-441` |  | FULFILLMENTREQUEST |
+| `-450` |  | MERCHANDISEHIERARCHY |
+| `-451` |  | MERCHANDISEHIERARCHY |
+| `-452` |  | MERCHANDISEHIERARCHY |
+| `-460` |  | INVENTORY |
+| `-461` |  | INVENTORY |
+| `-465` |  |  |
+| `-466` |  |  |
+| `-494` |  | EFFECTIVEDATING |
+| `-495` |  | EMPLOYEECHANGEREQUESTS |
+| `-496` |  | EMPLOYEECHANGEREQUESTS |
+| `-497` |  | EMPLOYEECHANGEREQUESTS |
+| `-5` |  | CRM |
+| `-500` |  | SALESCHANNELALLOCATION |
+| `-505` |  | INVENTORYSTATUS |
+| `-506` |  | MULTILOCINVT |
+| `-507` |  | SUBSCRIPTIONBILLING |
+| `-508` |  | SUBSCRIPTIONBILLING |
+| `-5139` |  | BILLCAPTURE |
+| `-514` |  | GAINLOSSACCTMAPPING |
+| `-5140` |  | BILLCAPTURE |
+| `-517` |  | ADVANCEDJOBS |
+| `-520` |  | WMSSYSTEM |
+| `-522` |  | SUPPLYCHAINCONTROLTOWER |
+| `-523` |  | TERMINATIONREASONTRACKING |
+| `-524` |  | TERMINATIONREASONTRACKING |
+| `-528` |  |  |
+| `-530` |  | WMSSYSTEM |
+| `-531` |  | WMSSYSTEM |
+| `-532` |  |  |
+| `-533` |  | ADVANCEDJOBS |
+| `-535` |  | CCTRACKING |
+| `-537` |  | CCTRACKING |
+| `-538` |  | CCTRACKING |
+| `-539` |  | CCTRACKING |
+| `-540` |  | CCTRACKING |
+| `-543` |  | GLAUDITNUMBERING |
+| `-544` |  | CUSTOMGLLINES |
+| `-546` |  | MULTISUBSIDIARYCUSTOMER |
+| `-547` |  | SUPPLYALLOCATION |
+| `-548` |  |  |
+| `-549` |  | SUBSIDIARIES |
+| `-550` |  | CROSSSUBSIDIARYFULFILLMENT |
+| `-551` |  | SUBSIDIARIES |
+| `-553` |  |  |
+| `-554` |  |  |
+| `-555` |  |  |
+| `-556` |  |  |
+| `-560` |  | PAYROLL |
+| `-561` |  | RESOURCEPLANNINGOVERHAUL |
+| `-565` |  | INVOICEGROUP |
+| `-571` |  | OVERTIME |
+| `-573` |  | PAYROLL |
+| `-574` |  | PROJECTICCROSSCHARGEREQUEST |
+| `-6` |  |  |
+| `-696` |  | TRANSACTIONACCOUNTINGRULES |
+| `-7` |  | JOBS |
+| `-710` |  | CADATACOLLECTION |
+| `-711` |  | CADATACOLLECTION |
+| `-712` |  | CADATACOLLECTION |
+| `-714` |  | CADATACOLLECTION |
+| `-715` |  | CADATACOLLECTION |
+| `-716` |  | CADATACOLLECTION |
+| `-717` |  | CADATACOLLECTION |
+| `-718` |  | CADATACOLLECTION |
+| `-719` |  | CADATACOLLECTION |
+| `-720` |  | CADATACOLLECTION |
+| `-728` |  | WMSSYSTEM |
+| `-8` |  |  |
+| `-861` |  | SUITECOMMERCEENTERPRISE |
+| `-862` |  | SUITECOMMERCEENTERPRISE |
+| `-863` |  | WMSSYSTEM |
+| `-864` |  | WMSSYSTEM |
+| `-865` |  |  |
+| `-867` |  | WMSSYSTEM |
+| `-868` |  | COMMERCESEARCHBOOSTING |
+| `-869` |  | COMMERCESEARCHBOOSTING |
+| `-876` |  | ADHOCXCHARGEREQUEST |
+| `-896` |  | PERFORMANCEMANAGEMENT |
+| `-897` |  | PERFORMANCEMANAGEMENT |
+| `-898` |  | PERFORMANCEMANAGEMENT |
+| `-899` |  | PERFORMANCEMANAGEMENT |
+| `-9` |  |  |
+| `-900` |  | WBS |
+| `-901` |  | SUPPLYCHAINCONTROLTOWER |
+| `-902` |  | EXPREPORTS |
+| `-904` |  | PERFORMANCEMANAGEMENT |
+| `-905` |  | WEEKLYTIMESHEETS |
+| `-906` |  | PROJECTICCROSSCHARGEREQUEST |
+| `-907` |  | WBS |
+| `-908` |  | VARIABLE_PAY_TBRBCT |
+| `-910` |  | PERFORMANCEMANAGEMENT |
+| `-911` |  | PERFORMANCEMANAGEMENT |
+| `-913` |  | EXPREPORTS |
+| `-914` |  | EXPREPORTS |
+| `-970` |  | ADVANCEDEMPLOYEEPERMISSIONS |
+| `-996` |  | PERFORMANCEMANAGEMENT |
+| `-997` |  | PERFORMANCEMANAGEMENT |
+| `-998` |  | PERFORMANCEMANAGEMENT |
+| `-999` |  | PERFORMANCEMANAGEMENT |

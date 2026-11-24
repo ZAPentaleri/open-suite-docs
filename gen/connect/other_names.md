@@ -1,0 +1,43 @@
+# Other_names (`other_names`)
+<!-- id: connect:other_names -->
+
+| Fact | Value |
+|---|---|
+| Table | `other_names` |
+| Record | `othername` |
+
+## Columns
+
+| Column | Type | Length | Precision | Scale | References | Tags | Facts |
+|---|---|---|---|---|---|---|---|
+| `account_number` | VARCHAR2 | 99 |  |  |  |  | `purpose`: `account_number` |
+| `address` | VARCHAR2 | 999 |  |  |  |  | `purpose`: `address` |
+| `address1` | VARCHAR2 | 150 |  |  |  |  | `purpose`: `address_line_1` |
+| `address2` | VARCHAR2 | 150 |  |  |  |  | `purpose`: `address_line_2` |
+| `address3` | VARCHAR2 | 150 |  |  |  |  | `purpose`: `address_line_3` |
+| `altemail` | VARCHAR2 | 254 |  |  |  |  | `purpose`: `alt_email` |
+| `altphone` | VARCHAR2 | 100 |  |  |  |  | `purpose`: `alt_phone` |
+| `city` | VARCHAR2 | 50 |  |  |  |  | `purpose`: `city` |
+| `comments` | VARCHAR2 | 4000 |  |  |  |  | `purpose`: `comments` |
+| `companyname` | VARCHAR2 | 83 |  |  |  |  | `purpose`: `company_name` |
+| `country` | VARCHAR2 | 50 |  |  |  |  | `purpose`: `country` |
+| `create_date` | TIMESTAMP |  |  |  |  |  | `purpose`: `create_date`; `time_zone`: `gmt` |
+| `date_last_modified` | TIMESTAMP |  |  |  |  | last_modified_column | `purpose`: `date_last_modified` |
+| `email` | VARCHAR2 | 254 |  |  |  |  | `purpose`: `email` |
+| `fax` | VARCHAR2 | 100 |  |  |  |  | `purpose`: `fax` |
+| `full_name` | VARCHAR2 | 1800 |  |  |  |  | `purpose`: `full_name` |
+| `home_phone` | VARCHAR2 | 100 |  |  |  |  | `purpose`: `home_phone` |
+| `is_person` | VARCHAR2 | 3 |  |  |  |  | `purpose`: `type_company_or_individual` |
+| `isinactive` | VARCHAR2 | 3 |  |  |  |  | `purpose`: `other_name_is_inactive` |
+| `last_modified_date` | TIMESTAMP |  |  |  |  |  | `purpose`: `last_modified_date`; `time_zone`: `gmt` |
+| `loginaccess` | VARCHAR2 | 3 |  |  |  |  | `purpose`: `login_access` |
+| `mobile_phone` | VARCHAR2 | 100 |  |  |  |  | `purpose`: `mobile_phone` |
+| `name` | VARCHAR2 | 83 |  |  |  |  | `purpose`: `name` |
+| `other_name_extid` | VARCHAR2 | 255 |  |  |  |  | `purpose`: `other_name_external_id` |
+| `other_name_id` | NUMBER |  | 39 | 0 |  |  | `purpose`: `other_name_id` |
+| `parent_id` | NUMBER |  | 39 | 0 |  |  | `purpose`: `child_of` |
+| `phone` | VARCHAR2 | 100 |  |  |  |  | `purpose`: `phone` |
+| `state` | VARCHAR2 | 50 |  |  |  |  | `purpose`: `state` |
+| `subsidiary` | NUMBER |  | 39 | 0 |  |  | `purpose`: `subsidiary` |
+| `url` | VARCHAR2 | 100 |  |  |  |  | `purpose`: `url` |
+| `zipcode` | VARCHAR2 | 36 |  |  |  |  | `purpose`: `zip_code` |

@@ -1,0 +1,16 @@
+# open-suite-docs: the repository root is the published reference itself
+# (the contents of the stage-3 out/ directory). Stage inputs and working files
+# never live here, so this file only keeps local clutter out.
+
+# Temporary and backup files
+*.tmp
+*.bak
+~*
+
+# Editor and OS clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp

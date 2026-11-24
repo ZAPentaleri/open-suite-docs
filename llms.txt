@@ -1,0 +1,331 @@
+# SuiteScript Reference
+
+> An original, spec-derived reference to NetSuite SuiteScript 2.1 (modules, script types, concepts) plus SuiteScript 1.0 material for reading and converting legacy scripts.
+
+This reference is written for code generators and the engineers who check their output. Start with a script type page to see the entry points a script must export, then use the module pages for exact signatures: every symbol has a `<!-- id: ... -->` marker under its heading, and every callable has a Parameter / Type / Required / Default table followed by returns, errors, governance (usage units) and availability. Concept pages under `topics/` explain behaviour that belongs to no single symbol, such as governance, record modes, deployment, SuiteQL and SDF. Examples are SuiteScript 2.1 AMD `define()` modules. The SuiteScript 1.0 pages exist only to read, convert and minimally repair legacy scripts; write new code in 2.1, using the conversion guide. Where the underlying vendor material appears to be wrong (a misspelt identifier, contradictory text, a copied row), the detail is kept as the source has it and flagged: ` [sic]` right after a suspect name, and a `> [!SOURCE-ERROR]` callout explaining what to verify. Treat flagged details as unconfirmed. Governance described as "not documented; assumed to be free" is a project convention, not a documented figure. Record and field IDs in the generated record pages are search/record IDs; SuiteQL names come from the account's Records Catalog. The generated pages also cover SuiteAnalytics Connect (ODBC) tables, which are not SuiteScript APIs.
+
+## Start here
+
+- [SuiteScript platform overview](topics/suitescript_overview.md): what SuiteScript is and where scripts run
+- [SuiteScript 2.1 overview](topics/ss21_overview.md): the 2.1 language level and its scope
+- [SuiteScript 2.1 script basics](topics/ss21_basics.md): script anatomy, annotations, define and entry points
+- [SuiteScript 2.1 Modules](topics/suitescript_modules.md): how modules are loaded and which exist
+- [SuiteScript Governance and Limits](topics/governance.md): usage units and time limits per script type
+- [Global objects and functions](globals.md): define, require, JSON, log, util, Promise and other globals
+- [Converting SuiteScript 1.0 to 2.1](conversion/ss1-to-ss21.md): full 1.0 to 2.x mapping table and before/after migration patterns
+
+## Script types
+
+- [BundleInstallationScript](script-types/BundleInstallationScript.md): hooks that run before/after bundle install, update and uninstall
+- [ClientScript](script-types/ClientScript.md): browser-side form events such as pageInit, fieldChanged and saveRecord
+- [CustomTool](script-types/CustomTool.md): server tools exposed to AI clients through a JSON-RPC schema
+- [EventSubscriber](script-types/EventSubscriber.md): handler invoked for subscribed record events
+- [MapReduceScript](script-types/MapReduceScript.md): staged bulk processing with getInputData, map, reduce and summarize
+- [MassUpdateScript](script-types/MassUpdateScript.md): per-record logic run from a mass update
+- [Portlet](script-types/Portlet.md): dashboard portlets rendered by a render entry point
+- [Restlet](script-types/Restlet.md): RESTful endpoints for get, put, post and delete
+- [ScheduledScript](script-types/ScheduledScript.md): server jobs run on a schedule or on demand
+- [SDFInstallationScript](script-types/SDFInstallationScript.md): logic run when an SDF project is deployed
+- [Suitelet](script-types/Suitelet.md): server pages and back-end endpoints via onRequest
+- [UserEventScript](script-types/UserEventScript.md): beforeLoad, beforeSubmit and afterSubmit record triggers
+- [WorkflowActionScript](script-types/WorkflowActionScript.md): custom actions invoked from workflows
+
+## Modules
+
+- [N/action](modules/N_action.md): find and execute record actions
+- [N/auth](modules/N_auth.md): change the current user's login email or password
+- [N/cache](modules/N_cache.md): short-term server-side caching of string values
+- [N/certificateControl](modules/N_certificateControl.md): manage certificates stored in the account
+- [N/commerce/recordView](modules/N_commerce_recordView.md): fast read-only item and website data for web stores
+- [N/compress](modules/N_compress.md): gzip and zip archives
+- [N/config](modules/N_config.md): load and update configuration pages
+- [N/crypto](modules/N_crypto.md): hashing, HMAC and symmetric encryption with stored secrets
+- [N/crypto/certificate](modules/N_crypto_certificate.md): sign and verify data and XML with certificates
+- [N/crypto/random](modules/N_crypto_random.md): random bytes, integers and UUIDs
+- [N/currency](modules/N_currency.md): currency exchange rates
+- [N/currentRecord](modules/N_currentRecord.md): the record currently open in the browser
+- [N/dataset](modules/N_dataset.md): SuiteAnalytics datasets
+- [N/datasetLink](modules/N_datasetLink.md): link two datasets for workbooks
+- [N/documentCapture](modules/N_documentCapture.md): extract text, fields and tables from documents
+- [N/email](modules/N_email.md): send email, bulk email and campaign events
+- [N/encode](modules/N_encode.md): convert strings between encodings
+- [N/error](modules/N_error.md): create and throw SuiteScript errors; error type catalogue
+- [N/file](modules/N_file.md): create, load, read and save File Cabinet files
+- [N/format](modules/N_format.md): parse and format dates, times and numbers
+- [N/format/i18n](modules/N_format_i18n.md): locale-aware number, currency and phone formatting
+- [N/http](modules/N_http.md): HTTP calls and server request/response objects
+- [N/https](modules/N_https.md): HTTPS calls, secure strings and RESTlet/Suitelet requests
+- [N/https/clientCertificate](modules/N_https_clientCertificate.md): HTTPS calls authenticated with a client certificate
+- [N/keyControl](modules/N_keyControl.md): manage keys stored in the account
+- [N/llm](modules/N_llm.md): generative AI text, chat, tools, embeddings and reranking
+- [N/log](modules/N_log.md): write execution log entries
+- [N/machineTranslation](modules/N_machineTranslation.md): machine translation of text
+- [N/manufacturing/productionCharges](modules/N_manufacturing_productionCharges.md): update manufacturing production charges
+- [N/pgp](modules/N_pgp.md): PGP encryption, decryption, signing and verification
+- [N/piremoval](modules/N_piremoval.md): remove personal information from records
+- [N/plugin](modules/N_plugin.md): load custom plug-in implementations
+- [N/portlet](modules/N_portlet.md): refresh and resize portlets
+- [N/query](modules/N_query.md): query definitions, conditions, paging and SuiteQL
+- [N/record](modules/N_record.md): create, load, edit, transform, attach and save records
+- [N/recordContext](modules/N_recordContext.md): record context such as localization
+- [N/redirect](modules/N_redirect.md): redirect the browser to records, Suitelets, searches and URLs
+- [N/render](modules/N_render.md): render PDFs and HTML from templates; email merge
+- [N/runtime](modules/N_runtime.md): current script, user, session and account information
+- [N/scriptTypes/restlet](modules/N_scriptTypes_restlet.md): build custom RESTlet responses
+- [N/search](modules/N_search.md): saved and ad hoc searches, paging and field lookups
+- [N/sftp](modules/N_sftp.md): SFTP connections, upload and download
+- [N/sso](modules/N_sso.md): single sign-on module and its status
+- [N/suiteAppInfo](modules/N_suiteAppInfo.md): installed SuiteApps and bundles
+- [N/task](modules/N_task.md): submit and monitor scheduled, map/reduce, CSV, search and query tasks
+- [N/task/accounting/recognition](modules/N_task_accounting_recognition.md): merge revenue arrangements and elements
+- [N/transaction](modules/N_transaction.md): void transactions
+- [N/translation](modules/N_translation.md): translation collection strings
+- [N/ui/dialog](modules/N_ui_dialog.md): client-side alert, confirm and option dialogs
+- [N/ui/message](modules/N_ui_message.md): client-side banner messages
+- [N/ui/serverWidget](modules/N_ui_serverWidget.md): build forms, lists, sublists and assistants on the server
+- [N/url](modules/N_url.md): resolve URLs for records, scripts, domains and task links
+- [N/util](modules/N_util.md): type checks and small helpers
+- [N/workbook](modules/N_workbook.md): SuiteAnalytics workbooks, tables, pivots and styles
+- [N/workflow](modules/N_workflow.md): initiate and trigger workflows
+- [N/xml](modules/N_xml.md): parse, query and build XML documents
+
+## Topics: platform, tooling and governance
+
+- [SuiteScript Developer Guide](topics/developer_guide.md): map of the developer material
+- [SuiteScript 2.1 advantages](topics/ss21_advantages.md): what 2.1 adds over earlier versions
+- [SuiteScript 2.1 Hello World tutorial](topics/ss21_hello_world.md): first-script walkthrough concepts
+- [SuiteScript IDs](topics/suitescript_ids.md): internal IDs, script IDs and other identifiers
+- [Preference Names and IDs](topics/suitescript_ids.preferences.md): preference and configuration page IDs
+- [SuiteScript Best Practices](topics/suitescript_best_practices.md): performance, safety and maintainability guidance
+- [SuiteScript FAQ](topics/suitescript_faq.md): common questions and answers
+- [SuiteScript Security Considerations](topics/suitescript_security.md): secrets, permissions and safe scripting
+- [Global Objects](topics/global_objects.md): concepts behind the global objects
+- [SuiteScript 2.1 JSDoc validation](topics/jsdoc_validation.md): required JSDoc tags and their values
+- [Entry Point Script Validation](topics/entry_point_validation.md): validation rules and error messages for entry-point scripts
+- [SuiteScript environment setup](topics/dev_environment.md): tools and setup for development
+- [SuiteScript Debugger](topics/debugger.md): debugging scripts in the account
+- [Debugging SuiteScript 2.1 Scripts](topics/debugger.ss2_1.md): the 2.1 debugger
+- [Legacy debugger for 1.0 and 2.0](topics/debugger.legacy.md): the older debugger
+- [Script Debugger Interface](topics/debugger.legacy_interface.md): legacy debugger screens and controls
+- [SuiteScript Unit Testing](topics/unit_testing.md): unit testing scripts with Jest
+- [Mocking SuiteScript in Unit Tests](topics/unit_testing.mocking.md): stubbing N/ modules in tests
+- [Script monitoring and logs](topics/monitoring.md): execution logs and monitoring
+- [The Scripted Records Page](topics/monitoring.scripted_records.md): ordering and reviewing scripts per record type
+- [Setting Runtime Options](topics/runtime_options.md): runtime settings that affect scripts
+- [OAuth 2.0 for SuiteScript](topics/oauth2.md): OAuth 2.0 concepts for scripts
+- [SuiteCloud Processors](topics/suitecloud_processors.md): processor pools, priorities and queues for background jobs
+
+## Topics: deployment, scheduling and map/reduce
+
+- [Script records](topics/script_record.md): the script record and its fields
+- [Creating script parameters](topics/script_parameters.md): script parameters and their types
+- [Script deployment](topics/script_deployment.md): deploying scripts
+- [Deployment record](topics/script_deployment.deployment_record.md): deployment record fields
+- [Deployments sublist](topics/script_deployment.deployments_sublist.md): deployments sublist on the script record
+- [Deployment levels](topics/script_deployment.levels.md): record-level vs form-level deployment
+- [Record-level deployment](topics/script_deployment.record_level.md): deploying to record types
+- [Form-level deployment](topics/script_deployment.form_level.md): attaching client scripts to forms
+- [Custom actions](topics/script_deployment.custom_actions.md): custom action deployments
+- [Script system notes](topics/script_deployment.system_notes.md): audit trail for scripts and deployments
+- [Web store impact](topics/script_deployment.web_store_impact.md): how scripts affect web store performance
+- [User event script setup in the UI](topics/user_event_script.ui_setup.md): creating user event script records
+- [Scheduled script deployments](topics/scheduled_script.deployment.md): scheduling and status of scheduled scripts
+- [Scheduled script status page](topics/scheduled_script.status_page.md): monitoring scheduled script instances
+- [Map/reduce processing model](topics/map_reduce.md): stages, keys, values and parallelism
+- [Map/Reduce deployment record](topics/map_reduce.deployment.md): deployment settings for map/reduce
+- [Map/reduce governance](topics/map_reduce.governance.md): usage limits per stage
+- [Map/reduce interruption handling](topics/map_reduce.interruptions.md): restarts, retries and idempotent design
+- [Map/Reduce status page](topics/map_reduce.status_page.md): monitoring map/reduce progress
+- [Map/Reduce submission](topics/map_reduce.submission.md): submitting and scheduling map/reduce jobs
+- [Map/Reduce testing](topics/map_reduce.testing.md): testing map/reduce scripts
+- [Map/reduce yielding](topics/map_reduce.yielding.md): automatic yields and their effects
+- [Suitelet Deployment Record](topics/suitelet.deployment.md): Suitelet deployment fields and URLs
+- [Suitelet Samples](topics/suitelet.samples.md): index of Suitelet sample patterns
+- [Basic Suitelet Samples](topics/suitelet.samples.basics.md): simple Suitelet patterns
+- [Custom Form Samples](topics/suitelet.samples.forms.md): Suitelets that build forms
+- [Custom List Samples](topics/suitelet.samples.lists.md): Suitelets that build lists
+- [Backend Suitelet Samples](topics/suitelet.samples.backend.md): Suitelets used as back-end services
+
+## Topics: records, searches and queries
+
+- [SuiteScript records guide](topics/records_guide.md): record families and scripting support
+- [Activity records](topics/records_guide.activities.md): calendar, task and call records
+- [Communication records](topics/records_guide.communications.md): messages and notes
+- [Customization records](topics/records_guide.customization.md): custom record, list and script-related records
+- [Entity records](topics/records_guide.entities.md): customers, vendors, employees and other entities
+- [File Cabinet records](topics/records_guide.file_cabinet.md): file and folder records
+- [Item records](topics/records_guide.items.md): item record types
+- [Item pricing sublist](topics/records_guide.pricing_sublist.md): scripting item price levels
+- [List records](topics/records_guide.lists.md): list-type records
+- [Banking records for AI connector access](topics/records_guide.lists.banking.md): bank reconciliation and statement records
+- [Marketing records](topics/records_guide.marketing.md): campaign and promotion records
+- [Support records](topics/records_guide.support.md): case and issue records
+- [Transactions-related records](topics/records_guide.transactions_related.md): records that support transactions
+- [Website records](topics/records_guide.website.md): web store records
+- [Transaction records](topics/transactions.md): transaction record behaviour
+- [Record Modes](topics/record_modes.md): standard vs dynamic record modes
+- [Record actions and macros](topics/record_actions_macros.md): available record actions and macros
+- [Scripting records and subrecords](topics/records_and_subrecords.md): working with subrecords
+- [Subrecord scripting basics](topics/records_and_subrecords.subrecord_basics.md): creating, editing and removing subrecords
+- [Body field subrecords](topics/records_and_subrecords.body_subrecords.md): subrecords on body fields
+- [Sublist subrecords](topics/records_and_subrecords.sublist_subrecords.md): subrecords on sublist lines
+- [Ship-to and bill-to address subrecords](topics/records_and_subrecords.ship_bill_addresses.md): transaction address subrecords
+- [SuiteScript Records Browser](topics/records_browser.md): reading record, field and search IDs
+- [Records Catalog](topics/records_catalog.md): analytics record and field names for SuiteQL
+- [Saved searches](topics/saved_searches.md): saved search concepts for scripts
+- [Saved search definition options](topics/saved_searches.definition.md): criteria, results and settings
+- [Search formulas](topics/search_formulas.md): formula fields in searches
+- [Search formula techniques](topics/search_formulas.techniques.md): common formula patterns
+- [Query definitions and components](topics/query_definition.md): N/query building blocks
+- [Query Formulas](topics/query_definition.formulas.md): formulas in N/query
+- [Query Relative Dates](topics/query_definition.relative_dates.md): relative date ranges in queries
+- [SuiteQL in N/query](topics/query_definition.suiteql.md): running SuiteQL from N/query
+- [SuiteQL](topics/suiteql.md): dialect rules, channels and performance
+- [SuiteQL built-in functions](topics/suiteql.builtin_functions.md): NetSuite BUILTIN functions
+- [SuiteQL joins](topics/suiteql.joins.md): join syntax and restrictions
+- [SuiteScript Analytic APIs](topics/analytic_apis.md): datasets and workbooks from script
+- [Workbook API dataset concepts](topics/analytic_apis.datasets.md): datasets, columns and conditions
+- [Workbook API workbook concepts](topics/analytic_apis.workbooks.md): workbooks, tables and pivots
+- [Dataset tutorial (Workbook API)](topics/analytic_apis.tutorial_dataset.md): building a dataset step by step
+- [Workbook tutorial (Workbook API)](topics/analytic_apis.tutorial_workbook.md): building a workbook step by step
+- [Workbook tutorial pivot steps](topics/analytic_apis.tutorial_workbook.pivot.md): building a pivot
+- [Dataset Builder plug-in](topics/dataset_builder_plugin.md): building a dataset in a plug-in implementation
+- [Dataset Builder plug-in context](topics/dataset_builder_plugin.context.md): the context object passed to the plug-in
+- [Workbook Builder plug-in](topics/workbook_builder_plugin.md): building a workbook in a plug-in implementation
+- [Workbook Builder plug-in context](topics/workbook_builder_plugin.context.md): the context object passed to the plug-in
+
+## Topics: UI, templates and integration
+
+- [N/ui Modules](topics/ui_modules.md): overview of the UI modules
+- [Working with UI Objects](topics/ui_assistants.md): forms, lists and assistants built in script
+- [SuiteScript 2.1 custom pages](topics/custom_pages.md): choosing a technique for custom pages
+- [Custom assistants](topics/custom_pages.assistants.md): multi-step assistants
+- [Single Page Applications](topics/single_page_applications.md): SPA framework overview
+- [Single Page Application Development](topics/single_page_applications.development.md): building SPA client and server scripts
+- [Single Page Application Management](topics/single_page_applications.management.md): deploying and managing SPAs
+- [N/commerce Modules](topics/commerce_modules.md): commerce module family
+- [Advanced PDF/HTML templates](topics/advanced_templates.md): template engine for printed output
+- [Advanced template markup and BFO](topics/advanced_templates.bfo.md): BFO markup for PDF output
+- [Advanced template field syntax](topics/advanced_templates.field_syntax.md): referencing record fields in templates
+- [Scripting advanced templates](topics/advanced_templates.scripting.md): rendering templates from script
+- [Advanced template fonts, languages and bar codes](topics/advanced_templates.localization_and_barcodes.md): fonts, translation and bar codes
+- [Scriptable email templates](topics/scriptable_templates.md): FreeMarker email templates
+- [Scriptable template synthetic fields: records](topics/scriptable_templates.synthetic_fields_records.md): synthetic fields on record templates
+- [Scriptable template synthetic fields: notifications](topics/scriptable_templates.synthetic_fields_notifications.md): synthetic fields on notification templates
+- [RESTlet authentication](topics/restlet_auth.md): choosing an authentication method for RESTlets
+- [TBA three-step authorization flow](topics/restlet_auth.tba_flow.md): token-based authentication flow
+- [TBA request signing](topics/restlet_auth.tba_signing.md): building a TBA signature
+- [TBA issuetoken endpoint](topics/restlet_auth.tba_issuetoken.md): issuing tokens programmatically
+- [TBA errors](topics/restlet_auth.tba_errors.md): token-based authentication errors
+- [Code grant flow for RESTlet callers](topics/restlet_auth.oauth2_code_grant.md): OAuth 2.0 authorization code grant
+- [Machine-to-machine token flow](topics/restlet_auth.oauth2_m2m.md): OAuth 2.0 client credentials
+- [OAuth 2.0 errors](topics/restlet_auth.oauth2_errors.md): OAuth 2.0 error codes and fixes
+- [TBA token endpoints](topics/restlet_auth.token_endpoints.md): issuing, revoking and inspecting tokens
+- [NLAuth header authentication](topics/restlet_auth.nlauth.md): the legacy NLAuth header and its retirement
+
+## Topics: customization, CSV import, SDF and workflows
+
+- [Custom fields](topics/custom_fields.md): custom field types and behaviour
+- [Custom field defaults and formulas](topics/custom_fields.defaults_formulas.md): default values and formula fields
+- [Custom field sourcing](topics/custom_fields.sourcing.md): sourcing and filtering
+- [Summary search custom fields](topics/custom_fields.summary_search.md): fields driven by summary searches
+- [Custom lists](topics/custom_lists.md): custom list records
+- [Custom records](topics/custom_records.md): custom record types
+- [Custom segments](topics/custom_segments.md): custom classification segments
+- [Where custom segments apply](topics/custom_segments.application.md): records and lines a segment can apply to
+- [Custom segments in workflows](topics/custom_segments.workflows.md): using segments in workflows
+- [Custom transactions](topics/custom_transactions.md): custom transaction types
+- [SuiteScript 2.1 custom modules](topics/custom_modules.md): writing and loading your own modules
+- [Custom module tutorial](topics/custom_modules.tutorial.md): building a custom module step by step
+- [Custom Tools Page](topics/custom_tool.management.md): managing custom tools
+- [MCP Apps](topics/custom_tool.mcp_apps.md): custom tools surfaced as MCP apps
+- [CSV import](topics/csv_import.md): CSV import overview and limits
+- [CSV import advanced options](topics/csv_import.advanced_options.md): import options and their effects
+- [CSV import data handling and field mapping](topics/csv_import.field_mapping.md): mapping columns to fields
+- [CSV import file conventions](topics/csv_import.file_conventions.md): file format rules
+- [CSV import jobs, status and preferences](topics/csv_import.jobs.md): job status and preferences
+- [CSV import threads and queues](topics/csv_import.multithreading.md): multi-threaded imports
+- [CSV import record types, sublists and subrecords](topics/csv_import.record_types.md): what can be imported
+- [Saved CSV import maps](topics/csv_import.saved_imports.md): saving and reusing import maps
+- [Single-file layout of CSV sublist rows](topics/csv_import.single_file_sublists.md): sublist rows in one file
+- [CSV import errors: general and relationships](topics/csv_import.errors_general.md): general import errors
+- [CSV import errors: items](topics/csv_import.errors_items.md): item import errors
+- [CSV import errors: items, continued](topics/csv_import.errors_items_more.md): more item import errors
+- [CSV import errors: transactions](topics/csv_import.errors_transactions.md): transaction import errors
+- [SuiteCloud Development Framework](topics/sdf.md): SDF projects overview
+- [SDF deploy file](topics/sdf.deploy_file.md): deploy file and manifest
+- [SDF custom object files](topics/sdf.object_files.md): XML object definitions
+- [SDF script objects](topics/sdf.script_objects.md): script and deployment objects in common
+- [SDF value lists for script objects](topics/sdf.value_lists.md): value lists and their feature dependencies
+- [SDF scheduled deployment recurrence](topics/sdf.recurrence.md): recurrence elements for scheduled deployments
+- [SDF translation collections](topics/sdf.translation_collections.md): translation collection objects
+- [Other SDF objects used with scripts](topics/sdf.other_objects.md): related object types
+- [SDF manifest dependencies](topics/sdf.manifest_dependencies.md): declaring features, objects, files and bundles a project needs
+- [SDF toolset object](topics/sdf.toolset.md): custom tool object reference
+- [SDF singlepageapp object](topics/sdf.singlepageapp.md): single page application object reference
+- [SDF bundleinstallationscript object](topics/sdf.bundleinstallationscript.md): bundle installation script object reference
+- [SDF clientscript object](topics/sdf.clientscript.md): client script object reference
+- [SDF eventsubscriber object](topics/sdf.eventsubscriber.md): event subscriber object reference
+- [SDF mapreducescript object](topics/sdf.mapreducescript.md): map/reduce script object reference
+- [SDF massupdatescript object](topics/sdf.massupdatescript.md): mass update script object reference
+- [SDF portlet object](topics/sdf.portlet.md): portlet script object reference
+- [SDF restlet object](topics/sdf.restlet.md): RESTlet script object reference
+- [SDF scheduledscript object](topics/sdf.scheduledscript.md): scheduled script object reference
+- [SDF installation script objects](topics/sdf.sdfinstallationscript.md): SDF installation script object reference
+- [SDF suitelet object](topics/sdf.suitelet.md): Suitelet script object reference
+- [SDF usereventscript object](topics/sdf.usereventscript.md): user event script object reference
+- [SDF workflowactionscript object](topics/sdf.workflowactionscript.md): workflow action script object reference
+- [SuiteFlow workflows](topics/suiteflow.md): workflow concepts for script authors
+- [SuiteFlow workflow initiation](topics/suiteflow.initiation.md): how workflows start
+- [SuiteFlow server triggers](topics/suiteflow.server_triggers.md): server-side triggers
+- [SuiteFlow client triggers](topics/suiteflow.client_triggers.md): client-side triggers
+- [SuiteFlow trigger execution order](topics/suiteflow.trigger_execution.md): order of triggers and actions
+- [SuiteFlow action types](topics/suiteflow.actions.md): available workflow actions
+- [SuiteFlow form and field actions](topics/suiteflow.field_actions.md): actions that change forms and fields
+- [SuiteFlow email action](topics/suiteflow.send_email.md): the send email action
+
+## SuiteScript 1.0 (legacy: reading, converting and minimal repair)
+
+- [Converting SuiteScript 1.0 to 2.1](conversion/ss1-to-ss21.md): mapping table, argument positions and migration patterns
+- [Transitioning to SuiteScript 2.1](topics/ss21_transition.md): planning a move to 2.1
+- [Converting SuiteScript 1.0 scripts](topics/ss21_transition.from_ss1.md): conversion concepts
+- [SuiteScript 1.0 to 2.1 API map](topics/ss21_transition.api_map.md): API correspondence overview
+- [SuiteScript 1.0 conversion samples](topics/ss21_transition.ss1_samples.md): worked conversion samples
+- [SuiteScript 1.0 conversion samples (searches and imports)](topics/ss21_transition.ss1_samples_more.md): more conversion samples
+- [SuiteScript 2.0 to 2.1 differences](topics/ss21_transition.from_ss20.md): upgrading 2.0 scripts
+- [SuiteScript 2.0 vs 2.1 runtime behavior](topics/ss21_transition.from_ss20.behaviors.md): behaviour changes between 2.0 and 2.1
+- [SuiteScript 2.0 vs 2.1 integration behavior](topics/ss21_transition.from_ss20.integration.md): integration differences between 2.0 and 2.1
+- [SuiteScript 1.0 API conventions](topics/ss1_api.md): 1.0 calling conventions and data types
+- [SuiteScript 1.0 script types](topics/ss1_api.script_types.md): 1.0 script types and entry functions
+- [SuiteScript 1.0 user event scripts](topics/ss1_api.user_events.md): 1.0 user event functions and type values
+- [SuiteScript 1.0 client scripts](topics/ss1_api.client_scripts.md): 1.0 client event functions
+- [SuiteScript 1.0 Suitelets](topics/ss1_api.suitelets.md): 1.0 Suitelet request handling
+- [SuiteScript 1.0 RESTlets](topics/ss1_api.restlets.md): 1.0 RESTlet functions
+- [SuiteScript 1.0 scheduled scripts](topics/ss1_api.scheduled_scripts.md): 1.0 scheduling, yields and recovery points
+- [Mass update script type (SS 1.0)](topics/ss1_api.mass_update.md): 1.0 mass update functions
+- [SuiteScript 1.0 portlet scripts](topics/ss1_api.portlets.md): 1.0 portlet functions
+- [SuiteScript 1.0 workflow action scripts](topics/ss1_api.workflow_action.md): 1.0 workflow action functions
+- [SuiteScript 1.0 bundle installation scripts](topics/ss1_api.bundle_installation.md): 1.0 bundle installation functions
+- [SuiteScript 1.0 record modes](topics/ss1_api.records.md): 1.0 record handling and modes
+- [SuiteScript 1.0 fields](topics/ss1_api.fields.md): 1.0 field values and types
+- [SuiteScript 1.0 sublists](topics/ss1_api.sublists.md): 1.0 sublists and 1-based lines
+- [SuiteScript 1.0 subrecords](topics/ss1_api.subrecords.md): 1.0 subrecord handling
+- [SuiteScript 1.0 inline editing](topics/ss1_api.inline_editing.md): 1.0 inline editing and field submits
+- [SuiteScript 1.0 searches](topics/ss1_api.search.md): 1.0 search filters, columns and operators
+- [SuiteScript 1.0 record initialization defaults](topics/ss1_api.initialization_defaults.md): initialization values for record creation
+- [Records and subrecords (SuiteScript 1.0)](ss1/records.md): nlapi record and subrecord functions
+- [Fields, sublists and matrix fields (SuiteScript 1.0)](ss1/fields-sublists.md): nlapi field, line-item and matrix functions
+- [Search, scheduling and context functions (SuiteScript 1.0)](ss1/search-scheduling-context.md): nlapi search, scheduling and context functions
+- [UI, HTTP, URL and portlet functions (SuiteScript 1.0)](ss1/ui-http.md): nlapi UI, HTTP and URL functions
+- [Utility functions: dates, currency, XML, files, errors, email, configuration and workflow (SuiteScript 1.0)](ss1/utilities.md): remaining nlapi utility functions
+- [Record and search objects (SuiteScript 1.0)](ss1/objects-record-search.md): nlobjRecord, nlobjSearch and related objects
+- [Service and request objects (SuiteScript 1.0)](ss1/objects-services.md): nlobjContext, nlobjFile, nlobjRequest, nlobjResponse and others
+- [Forms, fields and sublists (SuiteScript 1.0)](ss1/objects-forms.md): nlobjForm, nlobjField, nlobjSubList and related objects
+- [Assistants, lists, portlets and template rendering (SuiteScript 1.0)](ss1/objects-ui-other.md): nlobjAssistant, nlobjList, nlobjPortlet, nlobjTemplateRenderer
+
+## Generated reference tables
+
+- [Generated reference index](gen/index.md): entry point to the mechanically generated tables
+- [Records](gen/records/index.md): record types with fields, sublists, search filters, columns, joins and transforms
+- [SuiteAnalytics Connect tables](gen/connect/index.md): ODBC/JDBC tables, columns and keys (not SuiteScript APIs)
+- [Catalogs](gen/catalogs/index.md): ID lists such as permissions, features, preferences, SDF value lists and SuiteQL functions

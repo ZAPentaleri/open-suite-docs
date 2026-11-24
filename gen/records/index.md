@@ -1,0 +1,360 @@
+# Records
+
+- [Account](account.md): `account`
+- [Accounting Book](accountingbook.md): `accountingbook`
+- [Accounting Context](accountingcontext.md): `accountingcontext`
+- [Accounting Period](accountingperiod.md): `accountingperiod`
+- [Accounting Transaction](accountingtransaction.md): `accountingtransaction`
+- [Activity](activity.md): `activity`
+- [Address](address.md): `address`
+- [Address](addressbookaddress.md): `addressbookaddress`
+- [Advanced Intercompany Journal Entry](advintercompanyjournalentry.md): `advintercompanyjournalentry`
+- [Allocation Schedule](allocationschedule.md): `allocationschedule`
+- [Amortization Schedule](amortizationschedule.md): `amortizationschedule`
+- [Amortization Template](amortizationtemplate.md): `amortizationtemplate`
+- [Analytical Impact](analyticalimpact.md): `analyticalimpact`
+- [As Charged Project Revenue Rule](aschargedprojectrevenuerule.md): `aschargedprojectrevenuerule`
+- [Assembly Build](assemblybuild.md): `assemblybuild`
+- [Build/Assembly Item](assemblyitem.md): `assemblyitem`
+- [Assembly Item BOM](assemblyitembom.md): `assemblyitembom`
+- [Assembly Unbuild](assemblyunbuild.md): `assemblyunbuild`
+- [Automated Clearing House](automatedclearinghouse.md): `automatedclearinghouse`
+- [Balance Transactions by Segments](balancetrxbysegments.md): `balancetrxbysegments`
+- [Billing Account](billingaccount.md): `billingaccount`
+- [Billing Class](billingclass.md): `billingclass`
+- [Billing Rate Card](billingratecard.md): `billingratecard`
+- [Revenue Recognition Event](billingrevenueevent.md): `billingrevenueevent`
+- [Billing Schedule](billingschedule.md): `billingschedule`
+- [Bin](bin.md): `bin`
+- [Bin Transfer](bintransfer.md): `bintransfer`
+- [Bin Worksheet](binworksheet.md): `binworksheet`
+- [Blanket Purchase Order](blanketpurchaseorder.md): `blanketpurchaseorder`
+- [Bill of Materials](bom.md): `bom`
+- [Bill of Materials Revision](bomrevision.md): `bomrevision`
+- [Bonus](bonus.md): `bonus`
+- [Bonus Type](bonustype.md): `bonustype`
+- [Budget Category](budgetcategory.md): `budgetcategory`
+- [Budget Exchange Rate](budgetexchangerate.md): `budgetexchangerate`
+- [Budget Import](budgetimport.md): `budgetimport`
+- [Take Ownership](bulkownershiptransfer.md): `bulkownershiptransfer`
+- [Bundle Installation Script](bundleinstallationscript.md): `bundleinstallationscript`
+- [Event](calendarevent.md): `calendarevent`
+- [Campaign](campaign.md): `campaign`
+- [Campaign Audience](campaignaudience.md): `campaignaudience`
+- [Campaign Category](campaigncategory.md): `campaigncategory`
+- [Campaign Channel](campaignchannel.md): `campaignchannel`
+- [Campaign Family](campaignfamily.md): `campaignfamily`
+- [Campaign Offer](campaignoffer.md): `campaignoffer`
+- [Campaign Response](campaignresponse.md): `campaignresponse`
+- [Campaign Search Engine](campaignsearchengine.md): `campaignsearchengine`
+- [Campaign Subscription](campaignsubscription.md): `campaignsubscription`
+- [Campaign Template](campaigntemplate.md): `campaigntemplate`
+- [Campaign Vertical](campaignvertical.md): `campaignvertical`
+- [Cardholder Authentication](cardholderauthentication.md): `cardholderauthentication`
+- [Cash Refund](cashrefund.md): `cashrefund`
+- [Cash Sale](cashsale.md): `cashsale`
+- [Charge](charge.md): `charge`
+- [Charge Rule](chargerule.md): `chargerule`
+- [Check](check.md): `check`
+- [Class](classification.md): `classification`
+- [Client Script](clientscript.md): `clientscript`
+- [CMS Content](cmscontent.md): `cmscontent`
+- [CMS Content Type](cmscontenttype.md): `cmscontenttype`
+- [CMS Page](cmspage.md): `cmspage`
+- [Commerce Category](commercecategory.md): `commercecategory`
+- [Competitor](competitor.md): `competitor`
+- [Consolidated Exchange Rate](consolidatedexchangerate.md): `consolidatedexchangerate`
+- [Contact](contact.md): `contact`
+- [Contact Category](contactcategory.md): `contactcategory`
+- [Contact Role](contactrole.md): `contactrole`
+- [Cost Category](costcategory.md): `costcategory`
+- [Coupon Code](couponcode.md): `couponcode`
+- [Credit Card Charge](creditcardcharge.md): `creditcardcharge`
+- [Credit Card Refund](creditcardrefund.md): `creditcardrefund`
+- [Credit Memo](creditmemo.md): `creditmemo`
+- [Currency](currency.md): `currency`
+- [Currency Rate](currencyrate.md): `currencyrate`
+- [Customer](customer.md): `customer`
+- [Customer Category](customercategory.md): `customercategory`
+- [Customer Deposit](customerdeposit.md): `customerdeposit`
+- [Customer Message](customermessage.md): `customermessage`
+- [Customer Payment](customerpayment.md): `customerpayment`
+- [Customer Payment Authorization](customerpaymentauthorization.md): `customerpaymentauthorization`
+- [Customer Refund](customerrefund.md): `customerrefund`
+- [Customer Status](customerstatus.md): `customerstatus`
+- [Customer-Subsidiary Relationship](customersubsidiaryrelationship.md): `customersubsidiaryrelationship`
+- [Custom Purchase](custompurchase.md): `custompurchase`
+- [Custom Record](customrecord.md): `customrecord`
+- [Custom Sale](customsale.md): `customsale`
+- [Custom Transaction](customtransaction.md): `customtransaction`
+- [Deleted Record](deletedrecord.md): `deletedrecord`
+- [Department](department.md): `department`
+- [Deposit](deposit.md): `deposit`
+- [Deposit Application](depositapplication.md): `depositapplication`
+- [Description Item](descriptionitem.md): `descriptionitem`
+- [Discount Item](discountitem.md): `discountitem`
+- [Download Item](downloaditem.md): `downloaditem`
+- [Driver's License](driverslicense.md): `driverslicense`
+- [Email Template](emailtemplate.md): `emailtemplate`
+- [Employee](employee.md): `employee`
+- [Employee Change Request](employeechangerequest.md): `employeechangerequest`
+- [Employee Change Request Type](employeechangerequesttype.md): `employeechangerequesttype`
+- [Employee Expense Source Type](employeeexpensesourcetype.md): `employeeexpensesourcetype`
+- [Employee Status](employeestatus.md): `employeestatus`
+- [Employee Type](employeetype.md): `employeetype`
+- [Entity](entity.md): `entity`
+- [Entity Account Mapping](entityaccountmapping.md): `entityaccountmapping`
+- [Entity Group](entitygroup.md): `entitygroup`
+- [Estimate](estimate.md): `estimate`
+- [Expense Amortization Event](expenseamortizationevent.md): `expenseamortizationevent`
+- [Expense Category](expensecategory.md): `expensecategory`
+- [Expense Amortization Plan](expenseplan.md): `expenseplan`
+- [Expense Report](expensereport.md): `expensereport`
+- [Expense Report Policy](expensereportpolicy.md): `expensereportpolicy`
+- [Fair Value Formula](fairvalueformula.md): `fairvalueformula`
+- [Fair Value Price](fairvalueprice.md): `fairvalueprice`
+- [Fair Value Price](fairvaluepricelist.md): `fairvaluepricelist`
+- [File](file.md): `file`
+- [Financial Institution](financialinstitution.md): `financialinstitution`
+- [Fixed Amount Project Revenue Rule](fixedamountprojectrevenuerule.md): `fixedamountprojectrevenuerule`
+- [Folder](folder.md): `folder`
+- [Format Profile](formatprofile.md): `formatprofile`
+- [Fulfillment Request](fulfillmentrequest.md): `fulfillmentrequest`
+- [General Token](generaltoken.md): `generaltoken`
+- [Generic Resource](genericresource.md): `genericresource`
+- [Gift Certificate](giftcertificate.md): `giftcertificate`
+- [Gift Certificate Item](giftcertificateitem.md): `giftcertificateitem`
+- [GL Audit Numbering Sequence](glnumberingsequence.md): `glnumberingsequence`
+- [Global Account Mapping](globalaccountmapping.md): `globalaccountmapping`
+- [Global Inventory Relationship](globalinventoryrelationship.md): `globalinventoryrelationship`
+- [Goal](goal.md): `goal`
+- [HCMJob](hcmjob.md): `hcmjob`
+- [Impact Subcategory](impactsubcategory.md): `impactsubcategory`
+- [Imported Employee Expense](importedemployeeexpense.md): `importedemployeeexpense`
+- [Inbound Shipment](inboundshipment.md): `inboundshipment`
+- [Intercompany Allocation Schedule](intercompallocationschedule.md): `intercompallocationschedule`
+- [Intercompany Journal Entry](intercompanyjournalentry.md): `intercompanyjournalentry`
+- [Intercompany Transfer Order](intercompanytransferorder.md): `intercompanytransferorder`
+- [Inventory Adjustment](inventoryadjustment.md): `inventoryadjustment`
+- [Inventory Cost Revaluation](inventorycostrevaluation.md): `inventorycostrevaluation`
+- [Inventory Count](inventorycount.md): `inventorycount`
+- [Inventory Detail](inventorydetail.md): `inventorydetail`
+- [Inventory Part](inventoryitem.md): `inventoryitem`
+- [Inventory Number](inventorynumber.md): `inventorynumber`
+- [Inventory Number Bin](inventorynumberbin.md): `inventorynumberbin`
+- [Inventory Status](inventorystatus.md): `inventorystatus`
+- [Inventory Status Change](inventorystatuschange.md): `inventorystatuschange`
+- [Inventory Transfer](inventorytransfer.md): `inventorytransfer`
+- [Invoice](invoice.md): `invoice`
+- [Invoice Group](invoicegroup.md): `invoicegroup`
+- [Issue](issue.md): `issue`
+- [Product](issueproduct.md): `issueproduct`
+- [Version](issueproductversion.md): `issueproductversion`
+- [Item](item.md): `item`
+- [Item Account Mapping](itemaccountmapping.md): `itemaccountmapping`
+- [Item Bin Number](itembinnumber.md): `itembinnumber`
+- [Item Collection](itemcollection.md): `itemcollection`
+- [Item-Item Collection Relationship](itemcollectionitemmap.md): `itemcollectionitemmap`
+- [Item Collection Item Map](itemcollectionmap.md): `itemcollectionmap`
+- [Item Demand Plan](itemdemandplan.md): `itemdemandplan`
+- [Item Fulfillment](itemfulfillment.md): `itemfulfillment`
+- [Item Group](itemgroup.md): `itemgroup`
+- [Item Location Configuration](itemlocationconfiguration.md): `itemlocationconfiguration`
+- [Item Process Family](itemprocessfamily.md): `itemprocessfamily`
+- [Item Process Group](itemprocessgroup.md): `itemprocessgroup`
+- [Item Receipt](itemreceipt.md): `itemreceipt`
+- [Item Revision](itemrevision.md): `itemrevision`
+- [Item Supply Plan](itemsupplyplan.md): `itemsupplyplan`
+- [Project](job.md): `job`
+- [Job Requisition](jobrequisition.md): `jobrequisition`
+- [Job Status](jobstatus.md): `jobstatus`
+- [Job Type](jobtype.md): `jobtype`
+- [Journal Entry](journalentry.md): `journalentry`
+- [Kit Item](kititem.md): `kititem`
+- [Kudos Feature Records](kudos.md): `kudos`
+- [Labor Based Project Revenue Rule](laborbasedprojectrevenuerule.md): `laborbasedprojectrevenuerule`
+- [Landed Cost](landedcost.md): `landedcost`
+- [Lead](lead.md): `lead`
+- [Lead Source](leadsource.md): `leadsource`
+- [Location](location.md): `location`
+- [Lot Numbered Build/Assembly Item](lotnumberedassemblyitem.md): `lotnumberedassemblyitem`
+- [Lot Numbered Inventory Item](lotnumberedinventoryitem.md): `lotnumberedinventoryitem`
+- [Manufacturing Cost Template](manufacturingcosttemplate.md): `manufacturingcosttemplate`
+- [Manufacturing Operation Task](manufacturingoperationtask.md): `manufacturingoperationtask`
+- [Manufacturing Routing](manufacturingrouting.md): `manufacturingrouting`
+- [Map/Reduce Script](mapreducescript.md): `mapreducescript`
+- [Markup Item](markupitem.md): `markupitem`
+- [Massupdate Script](massupdatescript.md): `massupdatescript`
+- [Memorized Transaction Definition](memdoc.md): `memdoc`
+- [Merchandise Hierarchy Level](merchandisehierarchylevel.md): `merchandisehierarchylevel`
+- [Merchandise Hierarchy Node](merchandisehierarchynode.md): `merchandisehierarchynode`
+- [Merchandise Hierarchy Version](merchandisehierarchyversion.md): `merchandisehierarchyversion`
+- [Message](message.md): `message`
+- [Manufacturing Planned Time](mfgplannedtime.md): `mfgplannedtime`
+- [MSE Subsidiary](msesubsidiary.md): `msesubsidiary`
+- [Nexus](nexus.md): `nexus`
+- [Non-Inventory Part](noninventoryitem.md): `noninventoryitem`
+- [Non-inventory Item for Resale](noninventoryresaleitem.md): `noninventoryresaleitem`
+- [Non-inventory Item for Sale](noninventorysaleitem.md): `noninventorysaleitem`
+- [Note](note.md): `note`
+- [Note Type](notetype.md): `notetype`
+- [Opportunity](opportunity.md): `opportunity`
+- [Order Reservation](orderreservation.md): `orderreservation`
+- [Order Schedule](orderschedule.md): `orderschedule`
+- [Order Type](ordertype.md): `ordertype`
+- [Organization Value](organizationvalue.md): `organizationvalue`
+- [Originating Lead](originatinglead.md): `originatinglead`
+- [Other Charge Item](otherchargeitem.md): `otherchargeitem`
+- [Other Government-Issued ID](othergovernmentissuedid.md): `othergovernmentissuedid`
+- [Other Name](othername.md): `othername`
+- [Other Name Category](othernamecategory.md): `othernamecategory`
+- [Partner](partner.md): `partner`
+- [Partner Category](partnercategory.md): `partnercategory`
+- [Passport](passport.md): `passport`
+- [Paycheck](paycheck.md): `paycheck`
+- [Paycheck Journal](paycheckjournal.md): `paycheckjournal`
+- [Payment Card](paymentcard.md): `paymentcard`
+- [Payment Card Token](paymentcardtoken.md): `paymentcardtoken`
+- [Payment Event](paymentevent.md): `paymentevent`
+- [Payment Instrument](paymentinstrument.md): `paymentinstrument`
+- [Payment Item](paymentitem.md): `paymentitem`
+- [Payment Method](paymentmethod.md): `paymentmethod`
+- [Payroll Batch](payrollbatch.md): `payrollbatch`
+- [Payroll Batch Employee](payrollbatchaddemployees.md): `payrollbatchaddemployees`
+- [Payroll Item](payrollitem.md): `payrollitem`
+- [Percent Complete Project Revenue Rule](pctcompleteprojectrevenuerule.md): `pctcompleteprojectrevenuerule`
+- [Performance Metric](performancemetric.md): `performancemetric`
+- [Performance Review](performancereview.md): `performancereview`
+- [Performance Review Schedule](performancereviewschedule.md): `performancereviewschedule`
+- [Period End Journal](periodendjournal.md): `periodendjournal`
+- [Phone Call](phonecall.md): `phonecall`
+- [Units for Pick Decomposition](pickdecomposition.md): `pickdecomposition`
+- [Pick Strategy](pickstrategy.md): `pickstrategy`
+- [Pick Task](picktask.md): `picktask`
+- [Planned Order](plannedorder.md): `plannedorder`
+- [Planning Item Category](planningitemcategory.md): `planningitemcategory`
+- [Planning Item Group](planningitemgroup.md): `planningitemgroup`
+- [Planning Rule Group](planningrulegroup.md): `planningrulegroup`
+- [Planning Workbench View](planningview.md): `planningview`
+- [Portlet](portlet.md): `portlet`
+- [Price Book](pricebook.md): `pricebook`
+- [Price Level](pricelevel.md): `pricelevel`
+- [Price Plan](priceplan.md): `priceplan`
+- [Price Rule](pricerule.md): `pricerule`
+- [Price Rule Entry](priceruleentry.md): `priceruleentry`
+- [Pricing](pricing.md): `pricing`
+- [Pricing Group](pricinggroup.md): `pricinggroup`
+- [Issue Product Version](productversion.md): `productversion`
+- [Project Expense Type](projectexpensetype.md): `projectexpensetype`
+- [Job Intercompany Cross Charge Request](projecticchargerequest.md): `projecticchargerequest`
+- [Project Task](projecttask.md): `projecttask`
+- [Project Task Assignment](projecttaskassignment.md): `projecttaskassignment`
+- [Project Template](projecttemplate.md): `projecttemplate`
+- [Promotion](promotioncode.md): `promotioncode`
+- [Prompt](prompt.md): `prompt`
+- [Prospect](prospect.md): `prospect`
+- [Purchase Contract](purchasecontract.md): `purchasecontract`
+- [Purchase Order](purchaseorder.md): `purchaseorder`
+- [Requisition](purchaserequisition.md): `purchaserequisition`
+- [Reallocate Items](reallocateitem.md): `reallocateitem`
+- [Receive Inbound Shipment](receiveinboundshipment.md): `receiveinboundshipment`
+- [Resource Allocation](resourceallocation.md): `resourceallocation`
+- [Resource Group](resourcegroup.md): `resourcegroup`
+- [Restlet](restlet.md): `restlet`
+- [Return Authorization](returnauthorization.md): `returnauthorization`
+- [Revenue Arrangement](revenuearrangement.md): `revenuearrangement`
+- [Revenue Commitment](revenuecommitment.md): `revenuecommitment`
+- [Revenue Commitment Reversal](revenuecommitmentreversal.md): `revenuecommitmentreversal`
+- [Revenue Recognition Plan](revenueplan.md): `revenueplan`
+- [Revenue Recognition Field Map](revrecfieldmapping.md): `revrecfieldmapping`
+- [Revenue Recognition Plan](revrecplan.md): `revrecplan`
+- [Revenue Recognition Schedule](revrecschedule.md): `revrecschedule`
+- [Revenue Recognition Template](revrectemplate.md): `revrectemplate`
+- [Role](role.md): `role`
+- [SaaS Metric](saasmetric.md): `saasmetric`
+- [Sales Campaign](salescampaign.md): `salescampaign`
+- [Sales Channel](saleschannel.md): `saleschannel`
+- [Sales Order](salesorder.md): `salesorder`
+- [Sales Price Rule](salespricerule.md): `salespricerule`
+- [Sales Price Rule Entry](salespriceruleentry.md): `salespriceruleentry`
+- [Sales Role](salesrole.md): `salesrole`
+- [Sales Tax Item](salestaxitem.md): `salestaxitem`
+- [Scheduled Script](scheduledscript.md): `scheduledscript`
+- [Scheduled Script Instance](scheduledscriptinstance.md): `scheduledscriptinstance`
+- [Script Deployment](scriptdeployment.md): `scriptdeployment`
+- [Serialized Build/Assembly Item](serializedassemblyitem.md): `serializedassemblyitem`
+- [Serialized Inventory Item](serializedinventoryitem.md): `serializedinventoryitem`
+- [Service](serviceitem.md): `serviceitem`
+- [Service for Resale](serviceresaleitem.md): `serviceresaleitem`
+- [Service for Sale](servicesaleitem.md): `servicesaleitem`
+- [Shipping Item](shipitem.md): `shipitem`
+- [Shopping Cart](shoppingcart.md): `shoppingcart`
+- [Site Category](sitecategory.md): `sitecategory`
+- [Solution](solution.md): `solution`
+- [Statistical Journal Entry](statisticaljournalentry.md): `statisticaljournalentry`
+- [Store Pickup Fulfillment](storepickupfulfillment.md): `storepickupfulfillment`
+- [Subscription](subscription.md): `subscription`
+- [Subscription Change Order](subscriptionchangeorder.md): `subscriptionchangeorder`
+- [Subscription Line](subscriptionline.md): `subscriptionline`
+- [Subscription Plan](subscriptionplan.md): `subscriptionplan`
+- [Subscription Term](subscriptionterm.md): `subscriptionterm`
+- [Subsidiary](subsidiary.md): `subsidiary`
+- [Subsidiary Settings](subsidiarysettings.md): `subsidiarysettings`
+- [Subtotal Item](subtotalitem.md): `subtotalitem`
+- [Suitelet](suitelet.md): `suitelet`
+- [Supply Chain Snapshot](supplychainsnapshot.md): `supplychainsnapshot`
+- [Supply Chain Snapshot Simulation](supplychainsnapshotsimulation.md): `supplychainsnapshotsimulation`
+- [Supply Change Order](supplychangeorder.md): `supplychangeorder`
+- [Supply Plan Definition](supplyplandefinition.md): `supplyplandefinition`
+- [Case](supportcase.md): `supportcase`
+- [Case Origin](supportcaseorigin.md): `supportcaseorigin`
+- [Case Priority](supportcasepriority.md): `supportcasepriority`
+- [Case Status](supportcasestatus.md): `supportcasestatus`
+- [Case Type](supportcasetype.md): `supportcasetype`
+- [System Note](systemnote.md): `systemnote`
+- [Task](task.md): `task`
+- [Tax Account](taxacct.md): `taxacct`
+- [Tax Detail](taxdetail.md): `taxdetail`
+- [Tax Group](taxgroup.md): `taxgroup`
+- [Tax Liability Payment](taxliabilitypayment.md): `taxliabilitypayment`
+- [Tax Period](taxperiod.md): `taxperiod`
+- [Tax Schedule](taxschedule.md): `taxschedule`
+- [Tax Type](taxtype.md): `taxtype`
+- [Term](term.md): `term`
+- [Text Enhance Action](textenhanceaction.md): `textenhanceaction`
+- [Time](timebill.md): `timebill`
+- [Time Entry](timeentry.md): `timeentry`
+- [Time-Off Change](timeoffchange.md): `timeoffchange`
+- [Time-Off Plan](timeoffplan.md): `timeoffplan`
+- [Time-Off Request](timeoffrequest.md): `timeoffrequest`
+- [Time-Off Rule](timeoffrule.md): `timeoffrule`
+- [Time-Off Type](timeofftype.md): `timeofftype`
+- [Timesheet](timesheet.md): `timesheet`
+- [Topic](topic.md): `topic`
+- [Transaction](transaction.md): `transaction`
+- [Transfer Order](transferorder.md): `transferorder`
+- [Units Type](unitstype.md): `unitstype`
+- [Unlock Time Period](unlockedtimeperiod.md): `unlockedtimeperiod`
+- [Usage](usage.md): `usage`
+- [Userevent Script](usereventscript.md): `usereventscript`
+- [Vendor](vendor.md): `vendor`
+- [Vendor Automated Clearing House](vendorautomatedclearinghouse.md): `vendorautomatedclearinghouse`
+- [Vendor Bill](vendorbill.md): `vendorbill`
+- [Vendor Category](vendorcategory.md): `vendorcategory`
+- [Vendor Credit](vendorcredit.md): `vendorcredit`
+- [Vendor Payment](vendorpayment.md): `vendorpayment`
+- [Vendor Prepayment](vendorprepayment.md): `vendorprepayment`
+- [Vendor Prepayment Application](vendorprepaymentapplication.md): `vendorprepaymentapplication`
+- [Vendor Return Authorization](vendorreturnauthorization.md): `vendorreturnauthorization`
+- [Vendor-Subsidiary Relationship](vendorsubsidiaryrelationship.md): `vendorsubsidiaryrelationship`
+- [Wave](wave.md): `wave`
+- [Work Breakdown Structure](wbs.md): `wbs`
+- [Website](website.md): `website`
+- [Win-Loss Reason](winlossreason.md): `winlossreason`
+- [Workflow Action Script](workflowactionscript.md): `workflowactionscript`
+- [Work Order](workorder.md): `workorder`
+- [Work Order Close](workorderclose.md): `workorderclose`
+- [Work Order Completion](workordercompletion.md): `workordercompletion`
+- [Work Order Issue](workorderissue.md): `workorderissue`
+- [Workplace](workplace.md): `workplace`
+- [Zone](zone.md): `zone`
